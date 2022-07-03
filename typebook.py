@@ -70,6 +70,7 @@ def ebook_to_plaintext_tempfile(ebook):
 	if not os.path.exists(tempfile2) or os.path.getsize(tempfile2) == 0:
 		os.system('ebook-convert %s %s;' % (shlex.quote(ebook), shlex.quote(tempfile1)))
 		os.system("cat %s | sed 'H;1h;$!d;x;y/\\n/#/' | sed 's/#/ /g' > %s" % (shlex.quote(tempfile1), shlex.quote(tempfile2)))
+	os.unlink(tempfile1)
 	return sanitize_textfile(tempfile2)
 
 def random_line_of_textfile(textfile):
