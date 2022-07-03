@@ -20,7 +20,7 @@ Requirements:
 ```
 
 Usage:
-typebook.py <mode> <lessons> </path/to/ebook.epub>
+typebook.py MODE LESSONS PATH
 
 Modes:
 * line: get random sentences from the book
