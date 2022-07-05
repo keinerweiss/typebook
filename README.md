@@ -2,7 +2,10 @@
 
 Inspired by ```typefortune``` which ships with [gtypist](https://www.gnu.org/savannah-checkouts/gnu/gtypist/gtypist.html), I wanted to create such typing lessons from my epub ebooks for gtypist.
 
-Simply place typebook.py in your ~/bin/ folder and make it executable.
+![impression of the terminal application gtypist](illustration.png)
+
+
+Simply place ```typebook.py``` in your ```~/bin/``` folder and make it executable.
 
 ```
 chmod u+x ~/bin/typebook.py
